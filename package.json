@@ -1,0 +1,16 @@
+{
+  "name": "sdelta",
+  "version": "1.0.1",
+  "description": "A no dependencies pure js delta generator library and merger",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "node tests.mjs",
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "Liz3",
+  "license": "GPLv2",
+  "devDependencies": {
+    "esbuild": "^0.12.20"
+  }
+}
