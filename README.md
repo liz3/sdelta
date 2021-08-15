@@ -8,7 +8,7 @@ It has two functions
 ## Arguments - ATTENTION
 To both functions there can be passed a third argument which is a options object, these are:
 * `metaKey: string` - this is important! this is a property which will be used internally on the delta object for things like removing and adding properties to objects/arrays because null is a valid value, the default is `_dm_`(short for diff meta). do not set this property on your object as it can be fatal and lead to unexpected behaviour, the diff generator does checks for this but still keep this is mind!!!
-`fullArrays: boolean` - when theres a difference in arrays, rather then only diffing them, the entire array is included in the diff object, this can be actually more efficient in small arrays, if there is deltaying of larger arrays, this should be left of, the default is false.
+* `fullArrays: boolean` - when theres a difference in arrays, rather then only diffing them, the entire array is included in the diff object, this can be actually more efficient in small arrays, if there is deltaying of larger arrays, this should be left of, the default is false.
 
 ## Installation
 NPM:
