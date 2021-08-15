@@ -122,4 +122,10 @@ export default [
     right: 456,
     result: 456,
   },
+  {
+    opts: {fullArrays: true},
+    left: [123,456,789, {}],
+    right: [123, 456,789, {}, []],
+    result: [123, 456,789, {}, []]
+  }
 ];

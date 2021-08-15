@@ -1,4 +1,4 @@
-import { diffGenerator, merge } from "index.mjs";
+import { diffGenerator, merge } from "./index.mjs";
 import CASES from "./testCases.mjs";
 const run = (cb) => {
   let count = 0;
