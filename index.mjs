@@ -80,7 +80,7 @@ export const diffGenerator = (left, right, optsRaw) => {
 export const merge = (target, patch, optsRaw) => {
   const opts = { ...defaultOpts, ...optsRaw };
   if (patch === undefined) return target;
-  if(!isTrueObject(patch)) return patch;
+  if(!isTrueObject(patch) || Array.isArray(patch)) return patch;
   const isArray =
     (patch.hasOwnProperty(opts.metaKey) && patch[opts.metaKey].t === 1);
   if (!isArray && !target) target = {}; // should the target be nothing
