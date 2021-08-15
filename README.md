@@ -21,7 +21,7 @@ yarn add sdelta
 ```
 
 ## Example
-```
+```js
 import { diffGenerator, merge } from "sdelta";
 
 const left = { a: { b: { c: 1 }, d: 2 } };
